@@ -1,5 +1,13 @@
+import { useParams } from "react-router-dom";
+
 const EventDetailPage = () => {
-  return <h2>EventDetailPage</h2>;
+  const params = useParams();
+  return (
+    <>
+      <h1>EventDetailPage</h1>
+      <p>Event Id: {params.eventId}</p>
+    </>
+  );
 };
 
 export default EventDetailPage;
